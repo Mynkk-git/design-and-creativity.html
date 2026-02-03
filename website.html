@@ -1,0 +1,162 @@
+<html>
+<head>
+    <title>My HTML Basics Project</title>
+    <style>
+        /* General Page Settings */
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px;
+        }
+
+        /* The Main White Container */
+        .container {
+            background-color: white;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* Main Header Section */
+        header {
+            border-bottom: 2px solid #eeeeee;
+            margin-bottom: 20px;
+        }
+
+        /* The "Grid" for 3 columns using Flexbox */
+        .row {
+            display: flex;
+            gap: 15px; /* Space between boxes */
+            margin-bottom: 30px;
+        }
+
+        .box {
+            flex: 1; /* Makes all boxes equal size */
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        /* Blue Titles at the top of boxes */
+        .box-title {
+            background-color: #4682B4; /* Steel Blue */
+            color: white;
+            padding: 10px;
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        .box-content {
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        /* Code highlight style */
+        .code-snippet {
+            background-color: #ffffff;
+            border: 1px solid #4682B4;
+            padding: 8px;
+            color: #d63384; /* Pinkish color for tags */
+            font-family: monospace;
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Bottom Section Styles */
+        .types-section {
+            background-color: #fcfcfc;
+            border: 1px solid #eee;
+            padding: 20px;
+        }
+
+        .next-btn {
+            background-color: #337ab7;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            float: right;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        /* Clearfix for the float button */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>HTML Basics: Tags and Lists</h1>
+            <p>Learn about basic HTML tags and how to create lists on your webpage.</p>
+        </header>
+
+        <div class="row">
+            <div class="box">
+                <h3 class="box-title">HTML Tags</h3>
+                <div class="box-content">
+                    <p>HTML tags are the building blocks of a webpage.</p>
+                    <div class="code-snippet">
+                        &lt;h1&gt; Heading Tag &lt;/h1&gt;
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3 class="box-title">Paragraph Tags</h3>
+                <div class="box-content">
+                    <p>Use the &lt;p&gt; tag to add paragraphs to your content.</p>
+                    <div class="code-snippet">
+                        &lt;p&gt; This is a paragraph. &lt;/p&gt;
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3 class="box-title">Lists in HTML</h3>
+                <div class="box-content" style="display: flexbox;">
+                    <p>Learn how to create lists in HTML.</p>
+                    <ul>
+                        <li><a href="#">Ordered Lists</a></li>
+                        <li><a href="#">Unordered Lists</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="types-section clearfix">
+            <h2>Types of Lists</h2>
+            <hr>
+            <div class="row">
+                <div style="flex:1">
+                    <h4>Ordered List</h4>
+                    <p>An ordered list uses numbers:</p>
+                    <ol>
+                        <li>First item</li>
+                        <li>Second item</li>
+                        <li>Third item</li>
+                    </ol>
+                </div>
+                <div style="flex:1">
+                    <h4>Unordered List</h4>
+                    <p>An unordered list uses bullet points:</p>
+                    <ul>
+                        <li>Apple</li>
+                        <li>Banana</li>
+                        <li>Cherry</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <a href="#" class="next-btn">Next: Learn About Lists &rarr;</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
